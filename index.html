@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nita’s Touch | Nails & Beauty</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+    header {
+        background-color: #ffe6e6;
+        text-align: center;
+        padding: 20px;
+    }
+    nav {
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 10px 20px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        border-bottom: 1px solid #eee;
+    }
+    nav a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    .search-container {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    #searchInput {
+        display: none;
+        margin-left: 10px;
+        padding: 8px;
+        font-size: 1em;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .hero {
+        background: #ffe6e6;
+        padding: 80px 20px;
+        text-align: center;
+    }
+    .hero .button {
+        margin-top: 20px;
+        padding: 16px 40px;
+        background-color: #ffd700;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        font-size: 1.1em;
+        display: inline-block;
+    }
+    section {
+        padding: 60px 20px;
+        text-align: center;
+    }
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .service-card {
+        background: #fff9f9;
+        border: 1px solid #ffd700;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .gallery-preview {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .gallery-preview img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .button-small {
+        margin-top: 20px;
+        padding: 12px 30px;
+        background-color: #ffd700;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        display: inline-block;
+        font-size: 1em;
+    }
+    footer {
+        background: #ffe6e6;
+        color: #333;
+        text-align: center;
+        padding: 30px;
+        font-size: 1em;
+    }
+
+    /* Desktop Gallery Full Size View */
+    @media(min-width: 768px) {
+        .gallery-preview img {
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>NITA’S TOUCH AND INSPIRED NAILS</h1>
+    <p>"To archive your most beautiful self"</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="tel:+2347063794498">Call Me</a>
+    <div class="search-container">
+        🔍
+        <input type="text" id="searchInput" placeholder="Search...">
+    </div>
+</nav>
+
+<section class="hero">
+    <h2>Enhancing Your Natural Beauty</h2>
+    <a class="button" href="booking-choice.html">Book Appointment</a>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>At Nita’s Touch, we specialize in creating natural, elegant beauty looks through makeup, nail care, Gele tying, and bridal hair services. Our goal is to enhance your natural features effortlessly and professionally. Location is never a barrier — we bring beauty to you!</p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+        <div class="service-card"><h3>Makeup</h3><p>Natural, Glam, and Bridal Makeup looks.</p></div>
+        <div class="service-card"><h3>Nail Services</h3><p>Fixing of nails, gel, acrylic, and creative designs.</p></div>
+        <div class="service-card"><h3>Gele Tying</h3><p>Traditional and modern Gele tying styles.</p></div>
+        <div class="service-card"><h3>Bridal Hair</h3><p>Customized hair looks for special days.</p></div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Gallery Preview</h2>
+    <div class="gallery-preview">
+        <a href="https://via.placeholder.com/800x800?text=Nail+Art+1" data-lightbox="gallery"><img src="https://via.placeholder.com/300x300?text=Nail+Art+1" alt="Nail Art 1"></a>
+        <a href="https://via.placeholder.com/800x800?text=Nail+Art+2" data-lightbox="gallery"><img src="https://via.placeholder.com/300x300?text=Nail+Art+2" alt="Nail Art 2"></a>
+        <a href="https://via.placeholder.com/800x800?text=Nail+Art+3" data-lightbox="gallery"><img src="https://via.placeholder.com/300x300?text=Nail+Art+3" alt="Nail Art 3"></a>
+    </div>
+    <a class="button-small" href="gallery-lightbox.html">View Full Gallery</a>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Ready to look your best? Let's talk!</p>
+    <a class="button-small" href="booking-form.html">Book Now</a>
+</section>
+
+<footer>
+    <p>© 2025 Nita’s Touch | Nails & Beauty. All rights reserved.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script>
+    // Toggle search input
+    const searchContainer = document.querySelector('.search-container');
+    const searchInput = document.getElementById('searchInput');
+    searchContainer.addEventListener('click', () => {
+        searchInput.style.display = searchInput.style.display === 'block' ? 'none' : 'block';
+        searchInput.focus();
+    });
+
+    // Search and highlight
+    searchInput.addEventListener('input', function() {
+        const text = this.value.toLowerCase();
+        let found = false;
+        document.querySelectorAll('section').forEach(section => {
+            if (section.innerText.toLowerCase().includes(text)) {
+                section.style.backgroundColor = '#fff8dc';
+                found = true;
+            } else {
+                section.style.backgroundColor = '';
+            }
+        });
+        if (!found && text.length > 0) {
+            alert('No results found');
+        }
+    });
+</script>
+
+</body>
+</html>

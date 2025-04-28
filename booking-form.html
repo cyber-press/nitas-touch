@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Appointment | Nita’s Touch</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #ffe6e6;
+        margin: 0;
+        padding: 40px 20px;
+        text-align: center;
+    }
+    h1 {
+        margin-bottom: 30px;
+        font-size: 2em;
+        color: #333;
+    }
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    input, select, textarea {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 1em;
+    }
+    button[type="submit"] {
+        background-color: #ffd700;
+        color: white;
+        border: none;
+        font-weight: bold;
+        padding: 14px 40px;
+        border-radius: 5px;
+        font-size: 1.1em;
+        cursor: pointer;
+    }
+    button[type="submit"]:hover {
+        background-color: #e6c200;
+    }
+</style>
+</head>
+<body>
+
+<h1>Book Your Appointment</h1>
+
+<form action="https://formsubmit.co/necheanita2003@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Your Full Name" required>
+    <select name="service" required>
+        <option value="">Select Service</option>
+        <option value="Makeup">Makeup</option>
+        <option value="Nail Services">Nail Services</option>
+        <option value="Gele Tying">Gele Tying</option>
+        <option value="Bridal Hair Packaging">Bridal Hair Packaging</option>
+    </select>
+    <input type="date" name="date" required>
+    <input type="time" name="time" required>
+    <textarea name="message" placeholder="Additional Message" rows="4"></textarea>
+    <button type="submit">Submit Booking</button>
+</form>
+
+</body>
+</html>
