@@ -2,66 +2,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Book Appointment | Nita’s Touch</title>
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book an Appointment | Nita's Touch</title>
+  <style>
     body {
-        font-family: 'Arial', sans-serif;
-        background-color: #ffe6e6;
-        margin: 0;
-        padding: 40px 20px;
-        text-align: center;
+      font-family: Arial, sans-serif;
+      background-color: #ffe6e6;
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
     }
     h1 {
-        margin-bottom: 30px;
-        font-size: 2em;
-        color: #333;
+      margin-bottom: 1.5rem;
+      color: #333;
     }
     form {
-        max-width: 400px;
-        margin: 0 auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-    input, select, textarea {
-        width: 100%;
-        padding: 12px;
-        margin: 10px 0;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        font-size: 1em;
+    input, textarea, select {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
     }
-    button[type="submit"] {
-        background-color: #ffd700;
-        color: white;
-        border: none;
-        font-weight: bold;
-        padding: 14px 40px;
-        border-radius: 5px;
-        font-size: 1.1em;
-        cursor: pointer;
+    button {
+      background-color: #f5c542;
+      color: black;
+      border: none;
+      padding: 1rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
     }
-    button[type="submit"]:hover {
-        background-color: #e6c200;
+    button:hover {
+      background-color: #ffd700;
     }
-</style>
+  </style>
 </head>
 <body>
 
-<h1>Book Your Appointment</h1>
+<h1>Book an Appointment</h1>
 
 <form action="https://formsubmit.co/necheanita2003@gmail.com" method="POST">
-    <input type="text" name="name" placeholder="Your Full Name" required>
-    <select name="service" required>
-        <option value="">Select Service</option>
-        <option value="Makeup">Makeup</option>
-        <option value="Nail Services">Nail Services</option>
-        <option value="Gele Tying">Gele Tying</option>
-        <option value="Bridal Hair Packaging">Bridal Hair Packaging</option>
-    </select>
-    <input type="date" name="date" required>
-    <input type="time" name="time" required>
-    <textarea name="message" placeholder="Additional Message" rows="4"></textarea>
-    <button type="submit">Submit Booking</button>
+
+  <input type="text" name="Name" placeholder="Full Name" required>
+
+  <select name="Service" required>
+    <option value="">Select Service</option>
+    <option value="Makeup">Makeup</option>
+    <option value="Nail Fixing">Nail Fixing</option>
+    <option value="Gele Tying">Gele Tying</option>
+    <option value="Bridal Hair Styling">Bridal Hair Styling</option>
+    <option value="Other">Other</option>
+  </select>
+
+  <input type="date" name="Appointment Date" required>
+
+  <input type="time" name="Appointment Time" required>
+
+  <textarea name="Message" rows="4" placeholder="Additional Message"></textarea>
+
+  <!-- Optional: Redirect to Thank You page after submit -->
+  <input type="hidden" name="_next" value="https://cyber-press.github.io/nitas-touch/success.html">
+
+  <button type="submit">Submit Booking</button>
+
 </form>
 
 </body>
